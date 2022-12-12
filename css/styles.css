@@ -1,8 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Grenze+Gotisch:wght@500&family=Luckiest+Guy&family=Raleway:wght@100;148&family=Silkscreen&display=swap");
+/* Initial setting for Iphone SE */
+/* Tested in Iphone 8 and 8 plus */
+
 * {
 	margin: 0%;
 	padding: 0%;
 }
 
+
+
+/* Pagina Principal regras */
+
+a {
+	color: #705506;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #847957;
+
+}
+
+a:hover {
+	color: #c9ae5c;
+}
+
+a:hover,
+a:active {
+	outline: 0;
+}
+
+/* Shareado igualzinho */
 body {
 	background-color: #F8C632;
 	width: 100%;
@@ -13,16 +41,17 @@ nav ul {
 	position: static;
 	list-style-type: none;
 	font-family: 'Merriweather', serif;
+	font-size: 20px;
 	text-align: center;
-	line-height: 50px;
-	padding: 30px;
+	padding-top: 60px;
+	padding-bottom: 20px;
 	background-color: #050505;
-	color: #705506;
+
 }
 
 li {
-	height: 50px;
-	text-size-adjust: calc();
+	height: 80px;
+	font-size: 30px;
 }
 
 h2 {
@@ -30,11 +59,13 @@ h2 {
 	margin-top: 10%;
 	margin-left: 50px;
 	line-height: 0px;
+	font-size: 50px;
 }
 
 h1 {
 
 	margin-left: 50px;
+	font-size: 50px;
 	color: white;
 	font-family: 'Abril Fatface';
 }
@@ -45,30 +76,172 @@ h1 {
 	font-family: 'Luckiest Guy', cursive;
 	margin-left: 50px;
 	margin-right: 50px;
-	font-size: 80px;
+	font-size: 150px;
 	letter-spacing: 15px;
 
 
 }
 
+#title:hover .defaultTitle {
+	display: none;
+}
+
+.alternativeText {
+	font-size: 60px;
+
+}
+
+#title .alternativeTextB,
+.alternativeText {
+	display: none;
+}
+
+#title:hover .alternativeText {
+	display: block;
+	transform: rotate(20deg)
+		/* color: #c9ae5c; */
+}
+
+#title:hover .alternativeTextB {
+	display: inline;
+	color: red;
+	text-decoration: line-through;
+
+}
+
+
+
+/* foto */
+#doby img {
+	position: absolute;
+	width: 100%;
+	transform: rotate(-35deg);
+	bottom: -57px;
+	right: -190px;
+	overflow: hidden;
+}
+
+/* contenedor da foto Home */
 #doby {
 	position: absolute;
-	width: 270px;
-	height: 270px;
+	width: 700px;
+	height: 700px;
 	bottom: 0;
 	right: 0;
 	overflow: hidden;
 }
 
-#doby img {
+#phrases {
+	/* About */
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 60px;
+	left: 200px;
 	position: absolute;
-	width: 100%;
-	transform: rotate(-35deg);
-	bottom: -40px;
-	right: -70px;
+	font-family: 'Raleway', serif;
+	font-size: 40px;
+	text-align: right;
+
+
 }
 
+#next {
+	/* About */
+	position: absolute;
+	text-align: right;
+	padding: 30px;
+	bottom: 0;
+	right: 20px;
+	overflow: hidden;
+	font-family: 'Abril Fatface';
+	font-size: 30px;
 
+}
+
+/* contenedor da foto */
+.dobout {
+	/* About */
+	position: absolute;
+	width: 400px;
+	height: 400px;
+	bottom: 0;
+	left: -60px;
+	overflow: hidden;
+
+}
+
+#doby_horizontal img {
+	/* About */
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	overflow: hidden;
+
+}
+
+/* Botão help */
+
+.bt-help {
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	border-radius: 100px;
+	color: #F8C632;
+	font-family: 'Raleway', serif;
+	font-size: 29px;
+	font-weight: 100;
+	padding: 22px;
+	background-color: #000205;
+	-webkit-box-shadow: 4px 5px 20px 0 #000000;
+	-moz-box-shadow: 4px 5px 20px 0 #000000;
+	box-shadow: 4px 5px 20px 0 #000000;
+	text-shadow: 22px 33px 32px #000000;
+	border: solid #453F0B 1px;
+	text-decoration: none;
+	display: flex;
+	margin-top: 200px;
+	position: absolute;
+	margin-left: 200px;
+	cursor: pointer;
+	text-align: center;
+
+}
+
+.bt-help:hover {
+	border: solid rgba(237, 220, 51, 0.96) 1px;
+	background: rgba(11, 11, 11, 0.98);
+	background-image: -webkit-linear-gradient(top, rgba(11, 11, 11, 0.98), #323218);
+	background-image: -moz-linear-gradient(top, rgba(11, 11, 11, 0.98), #323218);
+	background-image: -ms-linear-gradient(top, rgba(11, 11, 11, 0.98), #323218);
+	background-image: -o-linear-gradient(top, rgba(11, 11, 11, 0.98), #323218);
+	background-image: -webkit-gradient(to bottom, rgba(11, 11, 11, 0.98), #323218);
+	-webkit-border-radius: 70px;
+	-moz-border-radius: 70px;
+	border-radius: 70px;
+	text-decoration: none;
+}
+
+/* email só por enquanto,
+  e ficou para sempre */
+.mail {
+	font: optional;
+	margin-top: 400px;
+	padding-top: 100px;
+	padding-left: 20px;
+	padding-right: 60px;
+	left: 100px;
+	position: absolute;
+	font-family: 'Raleway', serif;
+	font-size: 40px;
+	text-align: right;
+}
+
+.identidade {
+	margin-left: 320px;
+	margin-top: -40px;
+
+}
+
+.container-identidade {}
 
 
 /* @media screen and (min-width: 500px) {
